@@ -1,16 +1,43 @@
-**This project uses titanic data for predicting user survial**
+# 🛳️ Titanic Survival Prediction - MLOps Project
 
-**FRAMEWORKS/STACKS USED** 
+This project aims to predict the survival of passengers on the Titanic using a robust MLOps pipeline. It integrates multiple tools and platforms across the lifecycle — from data ingestion to monitoring — offering a real-world production-grade ML system.
 
+---
 
--Database(csv data) setup in GCP Buckets
--ETL Pipeline using Airflow and PostGreSQL
--Data ingestion using PSYCOPG2
-- JUPYTER notebook testing
-- Building feature store using REDIS
-- data processing with feature storing
-- model training with Feature Extraction
-- training pipeline and data and code versioning
-- user app building using flask
-- data drift detection using ALIBI-DETECT
-- ML monitoring using Grafana and Prometheus
+## 🚀 Overview
+
+Using the popular Titanic dataset, this end-to-end system demonstrates:
+
+- Data ingestion from GCP buckets  
+- ETL orchestration with Apache Airflow  
+- PostgreSQL integration  
+- Feature engineering and storing using Redis  
+- Model training and versioning  
+- A Flask-based user-facing prediction app  
+- Real-time drift detection and monitoring
+
+---
+
+## 🧰 Tech Stack & Workflow
+
+### 📦 Data Storage & Ingestion
+- **Google Cloud Storage (GCS)**: Titanic dataset is hosted in a GCP bucket.
+- **Apache Airflow**: Used for scheduling and managing the ETL pipeline.
+- **PostgreSQL**: Stores processed structured data from the CSV.
+- **Psycopg2**: Python-PostgreSQL adapter used to insert and query data.
+
+### 📓 Experimentation & Feature Engineering
+- **Jupyter Notebooks**: For initial testing and exploratory data analysis.
+- **Redis**: Serves as a lightweight feature store for serving and training.
+
+### 🧠 Model Training & Versioning
+- Feature extraction and preprocessing are integrated with the training process.
+- Data and code versioning handled via Git and reproducible training scripts.
+
+### 🌐 API Application
+- **Flask App**: Simple web interface for user inputs and prediction output.
+- Takes user details like age, gender, class, etc., and returns survival prediction.
+
+### 📉 Drift Detection & Monitoring
+- **Alibi Detect**: Monitors incoming data for drift in input distribution.
+- **Prometheus & Grafana**: Real-time monitoring and visualization of model health metrics.
