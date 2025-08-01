@@ -1,7 +1,8 @@
 **This project uses titanic data for predicting user survial**
 
-**frameworks/stacks used** 
 
+
+**FRAMEWORKS/STACKS USED** 
 -Database(csv data) setup in GCP Buckets
 -ETL Pipeline using Airflow and PostGreSQL
 -Data ingestion using PSYCOPG2
