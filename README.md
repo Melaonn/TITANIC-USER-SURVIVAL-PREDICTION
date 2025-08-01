@@ -3,6 +3,8 @@
 
 
 **FRAMEWORKS/STACKS USED** 
+
+
 -Database(csv data) setup in GCP Buckets
 -ETL Pipeline using Airflow and PostGreSQL
 -Data ingestion using PSYCOPG2
